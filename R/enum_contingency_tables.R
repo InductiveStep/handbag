@@ -26,7 +26,7 @@ e <- function(l,n) {
 #' @param ncol Number of columns
 #' @param total Grand total the cells sum to
 #' @return A list of nrow by ncol matrices
-#' #' @examples
+#' @examples
 #' enum_contingency_tables(1, 4, 1)
 #' enum_contingency_tables(2, 2, 4)
 #' @export

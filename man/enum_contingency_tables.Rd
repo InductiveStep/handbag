@@ -16,11 +16,12 @@ enum_contingency_tables(nrow, ncol, total)
 }
 \value{
 A list of nrow by ncol matrices
-#' @examples
-enum_contingency_tables(1, 4, 1)
-enum_contingency_tables(2, 2, 4)
 }
 \description{
 This function enumerates all contingency tables of a particular
 size all summing to a grand total.
+}
+\examples{
+enum_contingency_tables(1, 4, 1)
+enum_contingency_tables(2, 2, 4)
 }
