@@ -14,3 +14,9 @@ Include as usual:
 ```r
 library(handbag)
 ```
+
+For a list of functions, try
+
+```r
+help(package = "handbag")
+```
