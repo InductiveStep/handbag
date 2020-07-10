@@ -5,7 +5,12 @@
 To install it directly from github, run:
 
 ```r
-library(devtools)
-install_github("inductivestep/handbag")
+#install.packages("devtools")
+devtools::install_github("inductivestep/handbag")
+```
+
+Include as usual:
+
+```r
 library(handbag)
 ```
