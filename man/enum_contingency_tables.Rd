@@ -2,7 +2,8 @@
 % Please edit documentation in R/enum_contingency_tables.R
 \name{enum_contingency_tables}
 \alias{enum_contingency_tables}
-\title{Enumerate contingency tables with fixed grand total}
+\title{Enumerate two dimensional contingency tables with given
+dimensions and fixed grand total}
 \usage{
 enum_contingency_tables(nrow, ncol, total)
 }
@@ -15,6 +16,9 @@ enum_contingency_tables(nrow, ncol, total)
 }
 \value{
 A list of nrow by ncol matrices
+#' @examples
+enum_contingency_tables(1, 4, 1)
+enum_contingency_tables(2, 2, 4)
 }
 \description{
 This function enumerates all contingency tables of a particular
