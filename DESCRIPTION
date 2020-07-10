@@ -1,0 +1,15 @@
+Package: handbag
+Title: A Handbag Full of Useful Random Things
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Andi",
+           family = "Fugard",
+           role = c("aut", "cre"),
+           email = "almost@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0001-6507-2054"))
+Description: This is a collection of commands that I find useful.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
