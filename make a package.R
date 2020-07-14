@@ -10,8 +10,8 @@ library(devtools)
 library(roxygen2)
 library(here)
 
-devtools::create("../handbag") # in retrospect, "." might have done
-                               # as a path?
+#devtools::create("../handbag") # in retrospect, "." might have done
+                                # as a path?
 
 
 
