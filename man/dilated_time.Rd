@@ -16,7 +16,13 @@ are chosen here will also be the units of the results.}
 Returns the dilated time in units chosen for proper_time
 }
 \description{
-Calcualted dilated time (perspective of stationary observer)
+Calculates dilated time (perspective of stationary observer)
 from proper time experienced on object moving at a particular
 speed
+}
+\examples{
+curve(dilated_time(1, light_speed(x)), 0, .99,
+      xlab = "Speed (as proprtion of speed of light)",
+      ylab = "Dilated time",
+      main = "Dilated time when proper time = 1")
 }

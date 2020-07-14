@@ -15,7 +15,7 @@ light_speed <- function(m = 1) {
 
 #' Calculates dilated time
 #' 
-#' Calcualted dilated time (perspective of stationary observer)
+#' Calculates dilated time (perspective of stationary observer)
 #' from proper time experienced on object moving at a particular
 #' speed
 #' 
@@ -23,6 +23,11 @@ light_speed <- function(m = 1) {
 #' are chosen here will also be the units of the results.
 #' @param speed Speed of moving object in m/s
 #' @return Returns the dilated time in units chosen for proper_time
+#' @examples
+#' curve(dilated_time(1, light_speed(x)), 0, .99,
+#'       xlab = "Speed (as proprtion of speed of light)",
+#'       ylab = "Dilated time",
+#'       main = "Dilated time when proper time = 1")
 #' @export
 dilated_time <- function(proper_time, speed) {
   proper_time / sqrt(1 - (speed^2 / light_speed()^2))
