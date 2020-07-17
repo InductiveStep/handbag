@@ -7,13 +7,12 @@
 dilated_time(proper_time, speed)
 }
 \arguments{
-\item{proper_time}{The time on the object. Whatever units
-are chosen here will also be the units of the results.}
+\item{proper_time}{The time (in seconds) as experienced on the moving object}
 
 \item{speed}{Speed of moving object in m/s}
 }
 \value{
-Returns the dilated time in units chosen for proper_time
+Returns the dilated time in seconds
 }
 \description{
 Calculates dilated time (perspective of stationary observer)

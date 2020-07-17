@@ -1,6 +1,6 @@
 Package: handbag
 Title: A Handbag Full of Useful Random Things
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R: 
     person(given = "Andi",
            family = "Fugard",
