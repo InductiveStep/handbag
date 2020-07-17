@@ -1,0 +1,78 @@
+---
+title: "Handbag examples"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  html_document:
+  self_contained: no
+toc: yes
+toc_float: yes
+---
+
+
+This is a test package to play around with R...
+
+Get it started:
+
+```{r}
+#devtools::install_github("inductivestep/handbag")
+library(handbag)
+```
+
+
+
+## Enumerating contigency tables
+
+Here are all 2 by 2 tables which where the total sum is 3:
+
+```{r}
+enum_contingency_tables(2, 2, 3)
+```
+
+
+
+## Playing around with spaceships
+
+### Let's go on holiday
+
+```{r include=FALSE}
+speed_in_c    <- .8
+distance_in_c <- 4
+
+# Calculates the speed in m/s and distance in m
+spaceship_speed     <- light_speed(speed_in_c)
+distance_from_earth <- light_speed(distance_in_c)
+
+# Work out the contracted length
+distance_on_spaceship <- contracted_length(distance_from_earth,
+                                           spaceship_speed)
+```
+
+You want to travel to a space hotel `r distance_in_c` light years away from earth, so you set off in a spaceship at `r speed_in_c` times the speed of light, *c*.
+
+Length contraction means the distance from the perspective of the spaceship is shorter: `r distance_on_spaceship / light_speed()` light years, which would be experienced as taking `r distance_on_spaceship / spaceship_speed` years at `r speed_in_c`*c*.
+
+From the perspective of earth, the trip would take `r distance_from_earth / spaceship_speed` years, though it would take an additional `r distance_in_c` years for a radio signal to return to say that you arrived okay.
+
+
+
+### Let's go on holiday again...
+
+```{r include=FALSE}
+speed_in_c    <- 1
+```
+
+This time you're going at the speed of light, *c*. Same distance: `r distance_in_c` light years.
+
+```{r include=FALSE}
+# Calculates the speed in m/s and distance in m
+spaceship_speed     <- light_speed(speed_in_c)
+distance_from_earth <- light_speed(distance_in_c)
+
+# Work out the contracted length
+distance_on_spaceship <- contracted_length(distance_from_earth,
+                                           spaceship_speed)
+```
+
+Length contraction means the distance from the perspective of the spaceship is shorter: `r distance_on_spaceship / light_speed()` light years, which would be experienced as taking `r distance_on_spaceship / spaceship_speed` years (no time!) at *c*.
+
+From the perspective of earth, the trip would take `r distance_from_earth / spaceship_speed` years, though it would take an additional `r distance_in_c` years for a radio signal to return to say that you arrived okay.
