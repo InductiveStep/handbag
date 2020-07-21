@@ -54,8 +54,28 @@ Length contraction means the distance from the perspective of the spaceship is s
 From the perspective of earth, the trip would take `r distance_from_earth / spaceship_speed` years, though it would take an additional `r distance_in_c` years for a radio signal to return to say that you arrived okay.
 
 
+### Let's go on holiday again
 
-### Let's go on holiday again...
+```{r include=FALSE}
+speed_in_c    <- .999
+
+# Calculates the speed in m/s and distance in m
+spaceship_speed     <- light_speed(speed_in_c)
+distance_from_earth <- light_speed(distance_in_c)
+
+# Work out the contracted length
+distance_on_spaceship <- contracted_length(distance_from_earth,
+                                           spaceship_speed)
+```
+
+You want to travel to a space hotel `r distance_in_c` light years away from earth, so you set off in a spaceship at `r speed_in_c` times the speed of light, *c*.
+
+Length contraction means the distance from the perspective of the spaceship is shorter: `r distance_on_spaceship / light_speed()` light years, which would be experienced as taking `r distance_on_spaceship / spaceship_speed` years at `r speed_in_c`*c*.
+
+From the perspective of earth, the trip would take `r distance_from_earth / spaceship_speed` years, though it would take an additional `r distance_in_c` years for a radio signal to return to say that you arrived okay.
+
+
+### Let's go on holiday again - really fast this time...
 
 ```{r include=FALSE}
 speed_in_c    <- 1
@@ -74,5 +94,29 @@ distance_on_spaceship <- contracted_length(distance_from_earth,
 ```
 
 Length contraction means the distance from the perspective of the spaceship is shorter: `r distance_on_spaceship / light_speed()` light years, which would be experienced as taking `r distance_on_spaceship / spaceship_speed` years (no time!) at *c*.
+
+From the perspective of earth, the trip would take `r distance_from_earth / spaceship_speed` years, though it would take an additional `r distance_in_c` years for a radio signal to return to say that you arrived okay.
+
+
+### Another example
+
+This one is from http://physics.bu.edu/~duffy/ns547_spring10_notes03/length_contraction.html
+
+```{r include=FALSE}
+speed_in_c    <- .95
+distance_in_c <- 9.5
+
+# Calculates the speed in m/s and distance in m
+spaceship_speed     <- light_speed(speed_in_c)
+distance_from_earth <- light_speed(distance_in_c)
+
+# Work out the contracted length
+distance_on_spaceship <- contracted_length(distance_from_earth,
+                                           spaceship_speed)
+```
+
+You want to travel to a space hotel `r distance_in_c` light years away from earth, so you set off in a spaceship at `r speed_in_c` times the speed of light, *c*.
+
+Length contraction means the distance from the perspective of the spaceship is shorter: `r distance_on_spaceship / light_speed()` light years, which would be experienced as taking `r distance_on_spaceship / spaceship_speed` years at `r speed_in_c`*c*.
 
 From the perspective of earth, the trip would take `r distance_from_earth / spaceship_speed` years, though it would take an additional `r distance_in_c` years for a radio signal to return to say that you arrived okay.
