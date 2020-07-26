@@ -3,9 +3,10 @@ title: "Handbag examples"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output:
   html_document:
-  self_contained: no
-toc: yes
-toc_float: yes
+    self_contained: no
+    toc: yes
+    toc_float: yes
+    collapsed: false
 ---
 
 This is a handbag of commands that I find useful.
