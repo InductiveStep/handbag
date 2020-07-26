@@ -12,8 +12,11 @@ This is a handbag of commands that I find useful.
 
 Get it started:
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 devtools::install_github("inductivestep/handbag")
+```
+
+```{r}
 library(handbag)
 ```
 
@@ -21,7 +24,7 @@ library(handbag)
 
 ## Enumerating contigency tables
 
-Here are all 2 by 2 tables which where the total sum is 3:
+Here are all 2 by 2 tables in which the total sum is 3:
 
 ```{r}
 enum_contingency_tables(2, 2, 3)
@@ -29,7 +32,7 @@ enum_contingency_tables(2, 2, 3)
 
 ## Analysis helper functions
 
-```{r}
+```{r message=FALSE}
 library(tidyverse)
 tib <- expand.grid(like_peas   = c(0,1), 
                    like_cheese = c(0,1),
@@ -111,7 +114,7 @@ From the perspective of earth, the trip would take `r distance_from_earth / spac
 
 ### Another example
 
-This one is from http://physics.bu.edu/~duffy/ns547_spring10_notes03/length_contraction.html
+This one is from [Andrew Duffy](http://physics.bu.edu/~duffy/ns547_spring10_notes03/length_contraction.html). 
 
 ```{r include=FALSE}
 speed_in_c    <- .95

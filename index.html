@@ -453,14 +453,12 @@ div.tocify {
 <p>This is a handbag of commands that I find useful.</p>
 <p>Get it started:</p>
 <pre class="r"><code>devtools::install_github(&quot;inductivestep/handbag&quot;)</code></pre>
-<pre><code>## Skipping install of &#39;handbag&#39; from a github remote, the SHA1 (3c0dec53) has not changed since last install.
-##   Use `force = TRUE` to force installation</code></pre>
 <pre class="r"><code>library(handbag)</code></pre>
 <pre><code>## Welcome to handbag!</code></pre>
 <pre><code>## Follow @InductiveStep on Twitter to improve my Kardashian Index</code></pre>
 <div id="enumerating-contigency-tables" class="section level2">
 <h2>Enumerating contigency tables</h2>
-<p>Here are all 2 by 2 tables which where the total sum is 3:</p>
+<p>Here are all 2 by 2 tables in which the total sum is 3:</p>
 <pre class="r"><code>enum_contingency_tables(2, 2, 3)</code></pre>
 <pre><code>## [[1]]
 ##      [,1] [,2]
@@ -564,16 +562,8 @@ div.tocify {
 </div>
 <div id="analysis-helper-functions" class="section level2">
 <h2>Analysis helper functions</h2>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages -------------------------------------- tidyverse 1.3.0 --</code></pre>
-<pre><code>## v ggplot2 3.3.2     v purrr   0.3.4
-## v tibble  3.0.3     v dplyr   1.0.0
-## v tidyr   1.1.0     v stringr 1.4.0
-## v readr   1.3.1     v forcats 0.5.0</code></pre>
-<pre><code>## -- Conflicts ----------------------------------------- tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>tib &lt;- expand.grid(like_peas   = c(0,1), 
+<pre class="r"><code>library(tidyverse)
+tib &lt;- expand.grid(like_peas   = c(0,1), 
                    like_cheese = c(0,1),
                    like_chips  = c(0,1)) %&gt;% as_tibble()
 
@@ -625,7 +615,7 @@ tib</code></pre>
 </div>
 <div id="another-example" class="section level3">
 <h3>Another example</h3>
-<p>This one is from <a href="http://physics.bu.edu/~duffy/ns547_spring10_notes03/length_contraction.html" class="uri">http://physics.bu.edu/~duffy/ns547_spring10_notes03/length_contraction.html</a></p>
+<p>This one is from <a href="http://physics.bu.edu/~duffy/ns547_spring10_notes03/length_contraction.html">Andrew Duffy</a>.</p>
 <p>You want to travel to a space hotel 9.5 light years away from earth, so you set off in a spaceship at 0.95 times the speed of light, <em>c</em>.</p>
 <p>Length contraction means the distance from the perspective of the spaceship is shorter: 2.966374 light years, which would be experienced as taking 3.122499 years at 0.95<em>c</em>.</p>
 <p>From the perspective of earth, the trip would take 10 years, though it would take an additional 9.5 years for a radio signal to return to say that you arrived okay.</p>
