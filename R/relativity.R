@@ -14,7 +14,7 @@ light_speed <- function(m = 1) {
 #' Calculates dilated time
 #' 
 #' Calculates dilated time (perspective of stationary observer)
-#' from proper time experienced on object moving at a particular
+#' from proper time experienced on object moving at a given
 #' speed
 #' 
 #' @param proper_time The time (in seconds) as experienced on the moving object
@@ -59,6 +59,7 @@ proper_time <- function(dilated_time, speed) {
 contracted_length <- function(proper_length, speed) {
   proper_length * sqrt(1 - (speed^2 / light_speed()^2))
 }
+
 
 #' Calculates proper length
 #' 

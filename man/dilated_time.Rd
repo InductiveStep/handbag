@@ -16,7 +16,7 @@ Returns the dilated time in seconds
 }
 \description{
 Calculates dilated time (perspective of stationary observer)
-from proper time experienced on object moving at a particular
+from proper time experienced on object moving at a given
 speed
 }
 \examples{
