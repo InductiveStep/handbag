@@ -8,13 +8,12 @@ toc: yes
 toc_float: yes
 ---
 
-
-This is a test package to play around with R...
+This is a handbag of commands that I find useful.
 
 Get it started:
 
 ```{r}
-#devtools::install_github("inductivestep/handbag")
+devtools::install_github("inductivestep/handbag")
 library(handbag)
 ```
 
@@ -28,9 +27,21 @@ Here are all 2 by 2 tables which where the total sum is 3:
 enum_contingency_tables(2, 2, 3)
 ```
 
+## Analysis helper functions
+
+```{r}
+library(tidyverse)
+tib <- expand.grid(like_peas   = c(0,1), 
+                   like_cheese = c(0,1),
+                   like_chips  = c(0,1)) %>% as_tibble()
+
+tib
+tib$like <- handbag::binary_patterns_var(tib, "like_")
+tib
+```
 
 
-## Playing around with spaceships
+## Special relativity: playing around with spaceships
 
 ### Let's go on holiday
 

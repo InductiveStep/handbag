@@ -1,5 +1,5 @@
 # handbag
- A collection of handy commands for R
+A collection of handy commands for R.
 
 
 To install it directly from github, run:
@@ -20,3 +20,5 @@ For a list of functions, try
 ```r
 help(package = "handbag")
 ```
+
+Or have a look [over here](https://inductivestep.github.io/handbag/).
