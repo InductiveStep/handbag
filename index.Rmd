@@ -22,7 +22,6 @@ library(handbag)
 ```
 
 
-
 ## Enumerating contigency tables
 
 Here are all 2 by 2 tables in which the total sum is 3:
